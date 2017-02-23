@@ -11,7 +11,7 @@ brokerIp = "10.3.5.41"
 brokerPort = 1883
 
 color = ""
-ser = serial.Serial('/dev/ttyACM1', 9600, timeout=0,  parity=serial.PARITY_EVEN, rtscts=1)
+ser = serial.Serial('/dev/ttyACM0', 9600, timeout=0,  parity=serial.PARITY_EVEN, rtscts=1)
 print("Writing on %s..." % ser.name)
 
 while(1):
